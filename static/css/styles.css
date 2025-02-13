@@ -1,0 +1,299 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling with Gradient Animation */
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460, #1a1a2e); /* Dark blue gradient */
+    color: #fff; /* Light text for contrast */
+    line-height: 1.6;
+    font-size: 16px;
+    animation: gradientMove 10s ease infinite; /* Gradient animation */
+    background-size: 400% 400%; /* Larger background size for smoother animation */
+}
+
+/* Header Section */
+header {
+    background-color: rgba(0, 64, 128, 0.8); /* Semi-transparent dark blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+header button {
+    background: linear-gradient(90deg, #e94560, #c2334d); /* Vibrant red gradient */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    float: right;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+header button:hover {
+    background: linear-gradient(90deg, #c2334d, #e94560); /* Reverse gradient on hover */
+    transform: scale(1.05);
+}
+
+/* Main Content Section */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #fff; /* Light text for contrast */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    padding-bottom: 10px;
+    animation: fadeInLeft 0.8s ease-in-out;
+}
+
+/* File Input Styling */
+#audioFileLabel {
+    background: linear-gradient(90deg, #e94560, #c2334d); /* Vibrant red gradient */
+    color: rgb(255, 0, 0);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+#audioFileLabel:hover {
+    background: linear-gradient(90deg, #c2334d, #e94560); /* Reverse gradient on hover */
+    transform: translateY(-2px);
+}
+
+#audioFile {
+    display: none;
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: #000000; /* Light text */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #e94560; /* Vibrant red on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(233, 69, 96, 0.5); /* Glow effect */
+}
+
+/* Results Table Styling */
+#resultTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+#resultTable th,
+#resultTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    color: #2d0638; /* Light text */
+}
+
+#resultTable th {
+    background-color: rgba(11, 133, 255, 0.8); /* Semi-transparent dark blue */
+    font-weight: 600;
+}
+
+#resultTable tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent hover effect */
+}
+
+/* Processing Message Styling */
+#processingMessage {
+    display: none;
+    margin-top: 10px;
+    color: #e94560; /* Vibrant red */
+    font-size: 1.2rem;
+    font-weight: 500;
+    animation: pulse 1.5s infinite;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgb(15, 135, 255); /* Semi-transparent dark blue */
+    color: rgb(28, 9, 74);
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #audioFileLabel {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Buttons Styling with Gradient Animation */
+button {
+    background: linear-gradient(90deg, #e865fc, #8a2be2); /* Purple gradient */
+    color: rgb(35, 3, 3);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-position 0.5s ease, transform 0.2s ease;
+    background-size: 200% 100%;
+    background-position: left;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+button:hover {
+    background-position: right; /* Animate gradient to the right */
+    transform: translateY(-2px);
+}
+
+/* Select Dropdown Styling */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: #0025f9; /* Light text */
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+    border-color: #e94560; /* Vibrant red on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(233, 69, 96, 0.5); /* Glow effect */
+}
