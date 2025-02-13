@@ -14,7 +14,7 @@ CORS(app)
 app.secret_key = 'your_secret_key_here'
 
 # Rev AI API Client
-REV_AI_API_KEY = "02GX5Lx4PLmnyV7ZMQA2C_Iyy4dt3kY94-8RUMAvnvD3Q-4HVqf48UOs1zEW2C9_8thUQ5zKOa7VMxbaKBdjz_5W_FoW0"  # Replace with your actual Rev AI API key
+REV_AI_API_KEY = "Replace with your actual Rev AI API key"  # Replace with your actual Rev AI API key
 rev_client = apiclient.RevAiAPIClient(REV_AI_API_KEY)
 
 # Ensure uploads folder exists
